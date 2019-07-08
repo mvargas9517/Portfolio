@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 img {
     height: 70px;
     width: 70px;
@@ -15,7 +16,7 @@ img {
      height: 9vh;
      align-items: center;
  }
- .logo-container, .nav-links, .drib {
+ .logo-container, .nav-links{
      display: flex;
  }
 
@@ -23,12 +24,8 @@ img {
      flex: 1;
  }
  nav {
-    flex: 3;
+     flex: .8;
  }
- .drib {
-    flex: 1;
-    justify-content: flex-end;
-}
 .logo {
     font-weight: 400;
     margin: 5px;
@@ -38,7 +35,23 @@ img {
     list-style: none;
 }
 .nav-link {
-    color: darkblue;
-    font-size: 18px;
+    color: grey;
+    font-size: 5vh;
     text-decoration: none;
+}
+.name-text {
+    color: grey;
+    font-size: 8vh;
+}
+.divider {
+    background: grey;
+    width: 120%;
+    height: .5vh;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 50vh;
 }
