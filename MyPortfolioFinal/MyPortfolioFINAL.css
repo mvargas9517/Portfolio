@@ -1,81 +1,130 @@
-html,body {
-    width: 100%;
-    height: 100%;
+* {
     margin: 0;
-}
-.nav {
-    text-align: right;
-    height: 70px;
-    line-height: 120px;
-}
-.menu {
-    margin: 0 30px 0 0;
-    font-size: 7vh;
-}
-.menu a {
-    clear: right;
-    text-decoration: none;
-    color: gray;
-    margin: 0px 30px;
-    line-height: 70px;
-}
-label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-#toggle {
-    display: none;
+    padding: 0;
+    user-select: none;
 }
 
+.container nav.desk,
+.container nav.mob{
+    width: 100%;
+    background: transparent;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav.desk {
+    grid-area: 2/2;
+}
+nav.desk ul {
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+nav.desk ul li {
+    font-size: 4vh;
+    width: 20%;
+    float: right;
+    text-align:center;
+    line-height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+nav.desk ul li:hover{
+    background: black;
+}
+nav.desk ul li:active{
+    background: black;
+}
+nav ul li a {
+    color: beige;
+    text-decoration: none;
+}
+nav.mob,
+.hamburger-btn {
+    display: none;
+}
+.header {
+    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
 .name-text {
     color: grey;
-    font-size: 8vh;
+    font-size: 5vh;
 }
 
 .divider {
     background: grey;
     width: 100%;
     height: .5vh;
-    grid-area: 2/1
+    grid-area: 3/1;
 }
 
 .wrapper {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 3.5fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr ;
 }
-
-main h2 {
+main h1 {
     grid-area: 2/1;
+}
+main h2 {
+    grid-area: 3/1;
     text-align: right;
 }
-@media only screen and (max-width: 900px) {
-    label {
+main img {
+    width: 300px;
+    height: 300px;
+}
+@media screen and (max-width: 950px){
+    nav.desk{
+        display: none;
+    }
+    nav.mob,
+    .hamburger-btn{
         display: block;
+    }
+    .hamburger-btn .fa-bars,
+    .hamburger-btn .fa-times {
+        position: fixed;
+        right: 25px;
+        top: 15px;
+        font-size: 35px;
+        color: #fff;
         cursor: pointer;
     }
-    .menu {
+    .mob ul{
+        margin-top: 60px;
+        background: rgba(0, 0, 0, 0.2);
+        list-style-type: none;
+        display: none; 
+        color: #fff;
+        text-decoration-color: white;
+
+    }
+    .mob li {
+        text-transform: uppercase;
         text-align: center;
-        width: 100%;
-        display: none;
-        font-size: 2vh;
+        padding: 20px;
+        cursor: pointer;
     }
-    .menu a {
+    .mob ul.active{
         display: block;
-        border-bottom: 1px solid gray;
-        margin: 0;
     }
-    #toggle:checked + .menu {
-        display: block;
-        
+    .wrapper{
+        font-size: 2.5vh;
     }
+    
     main h2 {
-        text-align: inherit;
+        text-align: right;
     }
+
 }
+
