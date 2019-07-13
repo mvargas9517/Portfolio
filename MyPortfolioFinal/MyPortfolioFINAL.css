@@ -46,16 +46,20 @@ nav.mob,
 .hamburger-btn {
     display: none;
 }
-.header {
-    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center;
+section#startpage {
+    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover;
+    width: 100%;
+    height: 100vh;
+}
+section#projectspage {
+    background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
     background-size: cover;
     width: 100%;
     height: 100vh;
-
 }
 .name-text {
-    color: grey;
-    font-size: 5vh;
+    color: beige;
+    font-size: 3rem;
 }
 
 .divider {
@@ -63,6 +67,7 @@ nav.mob,
     width: 100%;
     height: .5vh;
     grid-area: 3/1;
+    align-self: start;
 }
 
 .wrapper {
@@ -70,7 +75,16 @@ nav.mob,
     margin: auto;
     display: grid;
     grid-template-columns: 1.8fr 1fr;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 3 fr;
+    align-items: center;
+}
+.wrapper1 {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+
 }
 main h1 {
     grid-area: 2/1;
@@ -79,10 +93,16 @@ main h2 {
     grid-area: 3/1;
     text-align: right;
 }
-main img {
-    width: 300px;
-    height: 300px;
+.box {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 25rem;
+    grid-area: 4 / span 2;
+    font-size: 4vh;
 }
+
+
+/*Smaller screens*/
 @media screen and (max-width: 950px){
     nav.desk{
         display: none;
@@ -112,18 +132,44 @@ main img {
     .mob li {
         text-transform: uppercase;
         text-align: center;
-        padding: 20px;
+        padding: 40px;
         cursor: pointer;
     }
     .mob ul.active{
         display: block;
     }
     .wrapper{
-        font-size: 2.5vh;
+        font-size: 1.8rem;
     }
-    
     main h2 {
         text-align: right;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 650px){
+    .wrapper {
+        font-size: 1.5rem;
+    }
+    main h1 {
+        margin-top: 40px;
+        grid-area: 1/1;
+        text-align: center;
+    }
+    main h2 {
+        grid-area: 2/1;
+        text-align: center;
+    }
+    .divider {
+        grid-area: 2/1
+    }
+    .box {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 21rem;
+    grid-area: 4 / span 2;
+    font-size: 3vh;
+    color: beige;
     }
 
 }
