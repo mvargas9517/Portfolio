@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/MyPortfolioFinal/fontawesome-free-5.9.0-web/css/all.css ">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+        jQuery(document).ready(function($){
             $(".hamburger-btn .fa-times").hide();
 
             $(".hamburger-btn .fa-bars").click(function(){
@@ -32,9 +32,9 @@
     <div class="container">
         <nav class="desk">
             <ul>
-                <li class="active"><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="#startpage">About</a></li>
+                <li><a href="#projectspage">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -83,16 +83,61 @@
                     <section id="projectspage">
                             <div class="name-text">
                                 <div class="wrapper1">
-                                <h3>Projects</h3>
-                                <h4>Skills</h4>
+                                    <h3>Projects</h3>
+                                <img src="/MyPortfolioFinal/images/robots.png" alt="robots" class="roboimg">
+                                <img src="images/bioapp.png" alt="bio" class="bioimg"/>
+                                <div class="overlay-bio">
+                                    <div class="text-bio">BioApp</div>
+                                </div>
+                                <div class="overlay-robo">
+                                    <div class="text-robo">RoboFriends</div>
+                                </div>
+                                
+                                
+
+                                
+                                
+
                             </div>
-    </div>
+                                    </div>
 
                     </section>
 
 
+                </div>
+            </div>
             </main>
     </div>
+
+    <main>
+
+        <!--Project Page-->
+
+        <section id="contactpage">
+            <div class="name-text">
+            <div class="wrapper2">
+                
+                    <h4>Get in touch</h4>
+
+                    <h5>Name</h5>
+                    <input class="name-box"></input>
+
+                    <h6>E-mail</h6>
+                    <input class="contact-box"></input>
+
+                    <p>Message</p>
+                    <input class="message-box"></input>
+
+                </div>
+
+            </div>
+
+                    
+
+        </section>
+
+
+</main>
     
 
 

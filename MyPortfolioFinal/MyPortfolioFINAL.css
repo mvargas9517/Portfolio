@@ -52,8 +52,13 @@ section#startpage {
     height: 100vh;
 }
 section#projectspage {
-    background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
+    background: linear-gradient(to left, rgb(58, 42, 175) 0%, rgb(2, 12, 41) 100%);
     background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+section#contactpage {
+    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover;
     width: 100%;
     height: 100vh;
 }
@@ -75,16 +80,8 @@ section#projectspage {
     margin: auto;
     display: grid;
     grid-template-columns: 1.8fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 3 fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
     align-items: center;
-}
-.wrapper1 {
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr;
-
 }
 main h1 {
     grid-area: 2/1;
@@ -101,7 +98,123 @@ main h2 {
     font-size: 4vh;
 }
 
+.wrapper1 {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr;
+    grid-template-rows: 300px 430px 200px;
+    align-items: center;
+    justify-items: center;
 
+}
+main h3{
+    text-align: center;
+    grid-area: 1/ span 3;
+}
+.overlay-robo {
+    width: 90%;
+    height: 90%;
+    grid-area: 2/1;
+    opacity: 0;
+    transition: .3s ease;
+    background-color:rgba(0, 0, 0, 1);
+    position: relative;
+
+  }
+.overlay-robo:hover {
+    opacity: 0.5;
+}
+.overlay-bio {
+    width: 35%;
+    height: 100%;
+    grid-area: 2/3;
+    opacity: 0;
+    transition: .3s ease;
+    background-color:rgba(0, 0, 0, 1);
+    position: relative;
+
+  }
+  .overlay-bio:hover {
+    opacity: 0.5;
+}
+.text-robo {
+    color: white;
+    font-size: 3vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-bio {
+    color: white;
+    font-size: 3vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.roboimg {
+    grid-area: 2/ 1;
+    width: 90%;
+    height: 90%;
+}
+.bioimg {
+    width: 35%;
+    height: 100%;
+    align-self: stretch;
+    grid-area: 2/3;
+}
+
+.wrapper2 {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1.8fr;
+    grid-template-rows: 200px 100px 100px 100px 200px 100px;
+    align-items: center;
+}
+main h4 {
+    grid-area: 1/ 2;
+    text-align: center;
+    margin-top: 100px;
+}
+main h5 {
+    grid-area: 2/1;
+}
+main h6 {
+    grid-area: 2/3;
+}
+main p {
+    grid-area: 4/1;
+}
+.name-box {
+    background: gray;
+    height: 100%;
+    width: 100%;
+    grid-area: 3/1;
+    opacity: 0.6;
+}
+.contact-box {
+    background: gray;
+    height: 100%;
+    width: 100%;
+    grid-area: 3/3;
+    opacity: 0.6;
+}
+.message-box {
+    background: gray;
+    height: 100%;
+    width: 100%;
+    grid-area: 5 / span 3;
+    opacity: 0.6;
+}
 /*Smaller screens*/
 @media screen and (max-width: 950px){
     nav.desk{
@@ -122,7 +235,7 @@ main h2 {
     }
     .mob ul{
         margin-top: 60px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.6);
         list-style-type: none;
         display: none; 
         color: #fff;
@@ -143,6 +256,9 @@ main h2 {
     }
     main h2 {
         text-align: right;
+    }
+    .overlay-robo {
+        display: none;
     }
 }
 
@@ -170,6 +286,32 @@ main h2 {
     grid-area: 4 / span 2;
     font-size: 3vh;
     color: beige;
+    }
+    .roboimg {
+        width: 100%;
+        height: 100%;
+        align-self: stretch;
+        grid-area: 2/ span 4;
+    }
+    .bioimg {
+        width: 45%;
+        height: 100%;
+        align-self: stretch;
+        grid-area: 4/ span 7;
+    }
+    main h3 {
+        font-size: 4vh;
+        grid-area: 1/ span 7;
+    }
+    .wrapper1 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr .2fr 1fr;
+        grid-template-rows: 130px 150px 150px 300px;
+        align-items: center;
+        justify-items: center;
+    
     }
 
 }
