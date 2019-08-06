@@ -47,20 +47,20 @@ nav.mob,
     display: none;
 }
 section#startpage {
-    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover;
+    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 section#projectspage {
     background: linear-gradient(to left, rgb(58, 42, 175) 0%, rgb(2, 12, 41) 100%);
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 section#contactpage {
-    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover;
+    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .name-text {
     color: beige;
@@ -78,15 +78,17 @@ section#contactpage {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1.8fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .3fr .3fr .5fr .8fr .3fr;
 }
 main h1 {
     grid-area: 2/1;
+    white-space: nowrap;
 }
 main h2 {
     grid-area: 3/1;
     text-align: right;
+    white-space: nowrap;
 }
 .box {
     background: rgba(0, 0, 0, 0.7);
@@ -134,7 +136,6 @@ main h3{
     transition: .3s ease;
     background-color:rgba(0, 0, 0, 1);
     position: relative;
-
   }
   .overlay-bio:hover {
     opacity: 0.5;
@@ -171,6 +172,9 @@ main h3{
     color: beige;
     text-decoration: none;
 }
+.robotext:hover {
+    opacity: 0.7;
+}
 .bioimg {
     width: 35%;
     height: 100%;
@@ -182,18 +186,22 @@ main h3{
     color: beige;
     text-decoration: none;
 }
+.biotext:hover {
+    opacity: 0.7;
+}
 .wrapper2 {
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 1.8fr 1fr 1.8fr;
-    grid-template-rows: 200px 150px 100px 150px 200px 130px;
+    grid-template-rows: 220px 150px 100px 150px 200px 160px;
     align-items: center;
 }
 main h4 {
     grid-area: 1/ 2;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 120px;
+    white-space: nowrap;
 }
 main h5 {
     grid-area: 2/1;
@@ -232,6 +240,9 @@ main p {
 img:hover{
     opacity: 0.7;
 }
+a {
+    text-decoration: none;
+}
 /*Smaller screens*/
 @media screen and (max-width: 950px){
     nav.desk{
@@ -268,8 +279,39 @@ img:hover{
     .mob ul.active{
         display: block;
     }
-    .wrapper{
-        font-size: 1.8rem;
+    .wrapper {
+     width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .3fr .3fr .5fr .8fr .3fr;
+    }
+    .wrapper1 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 150px 300px 75px 300px 75px;
+        align-items: center;
+        justify-items: center;
+    
+    }
+    main h3 {
+        font-size: 4.5vh;
+    }
+    .roboimg {
+        grid-area: 2/2;
+    }
+    .robotext {
+        grid-area: 3/2;
+        font-size: 3vh;
+    }
+    .bioimg {
+        grid-area: 4/2;
+    }
+    .biotext {
+        font-size: 3vh;
+        grid-area: 5/2;
     }
     main h2 {
         text-align: right;
@@ -277,45 +319,58 @@ img:hover{
     .overlay-robo {
         display: none;
     }
+    .overlay-bio {
+        display: none;
+    }
+    section#contactpage {
+        background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover fixed;
+        width: 100%;
+        height: 100%;
+    }
 }
-
 /*Mobile*/
 @media screen and (max-width: 650px){
     .wrapper {
-        font-size: 1.5rem;
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        grid-template-rows: .45fr .05fr .48fr .5fr .15fr;
     }
     main h1 {
-        margin-top: 40px;
-        grid-area: 1/1;
+        margin-top: 80px;
+        grid-area: 1/span 2;
         text-align: center;
+        font-size: 6vh;
     }
     main h2 {
-        grid-area: 2/1;
-        text-align: center;
+        grid-area: 3/span 2;
+        font-size: 6vh;
+        justify-self:  top;
     }
     .divider {
-        grid-area: 2/1
+        grid-area: 2/span 2;
     }
     .box {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 21rem;
+    height: 23rem;
     grid-area: 4 / span 2;
-    font-size: 3vh;
+    font-size: 3.3vh;
     color: beige;
     }
     .roboimg {
         width: 100%;
         height: 100%;
         align-self: stretch;
-        grid-area: 2/ span 4;
+        grid-area: 2/ span 3;
     }
     .robotext {
         grid-area: 3/2;
         white-space: nowrap;
     }
     .bioimg {
-        width: 45%;
+        width: 40%;
         height: 100%;
         align-self: stretch;
         grid-area: 4/ span 3;
@@ -335,15 +390,10 @@ img:hover{
         width: 90%;
         margin: auto;
         display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 120px 150px 100px 275px 100px;
+        grid-template-columns: 100px 110px 100px;
+        grid-template-rows: 170px 150px 100px 275px 100px;
         align-items: center;
         justify-items: center;
-    }
-    section#contactpage {
-        background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover;
-        width: 100%;
-        height: 100vh;
     }
     .wrapper2 {
         width: 100%;
@@ -355,6 +405,9 @@ img:hover{
         justify-content: center;
         background: rgba(0, 0, 0, 0.7);
     }
+    .overlay-bio {
+        display: none;
+      }
     main h4 {
         font-size: 7vh;
         grid-area: 1 / span 3;
