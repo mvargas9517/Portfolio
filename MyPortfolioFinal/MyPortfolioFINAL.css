@@ -58,7 +58,7 @@ section#projectspage {
     height: 100%;
 }
 section#contactpage {
-    background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover fixed;
+    background: black;
     width: 100%;
     height: 100%;
 }
@@ -189,59 +189,38 @@ main h3{
 .biotext:hover {
     opacity: 0.7;
 }
-.wrapper2 {
+ .wrapper2 {
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 1.8fr 1fr 1.8fr;
     grid-template-rows: 220px 150px 100px 150px 200px 160px;
     align-items: center;
-}
-main h4 {
-    grid-area: 1/ 2;
-    text-align: center;
-    margin-top: 120px;
-    white-space: nowrap;
-}
-main h5 {
-    grid-area: 2/1;
-}
-main h6 {
-    grid-area: 2/3;
-}
-main p {
-    grid-area: 4/1;
-}
-.name-box {
-    background: gray;
-    height: 100%;
-    width: 100%;
-    grid-area: 3/1;
-    opacity: 0.8;
-}
-.contact-box {
-    background: gray;
-    height: 100%;
-    width: 100%;
-    grid-area: 3/3;
-    opacity: 0.8;
-}
-.message-box {
-    background: gray;
-    height: 100%;
-    width: 100%;
-    grid-area: 5 / span 3;
-    opacity: 0.8;
-}
+} 
 .iconsgroup {
-    grid-area: 6/3;
-    text-align: right;
+    text-align: center;
 }
 img:hover{
     opacity: 0.7;
 }
 a {
     text-decoration: none;
+}
+h4 {
+    font-size: 5vh;
+    color: beige;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 4vh;
+    color: beige;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.iconsgroup {
+    margin-top: 40px;
 }
 /*Smaller screens*/
 @media screen and (max-width: 950px){
@@ -322,11 +301,6 @@ a {
     .overlay-bio {
         display: none;
     }
-    section#contactpage {
-        background: url("/MyPortfolioFinal/images/computer.jpg") no-repeat center center/ cover fixed;
-        width: 100%;
-        height: 100%;
-    }
 }
 /*Mobile*/
 @media screen and (max-width: 650px){
@@ -384,7 +358,7 @@ a {
         grid-area: 1/ span 3;
     }
     a{
-        font-size: 4vh;
+        font-size: 3.5vh;
     }
     .wrapper1 {
         width: 90%;
@@ -408,36 +382,5 @@ a {
     .overlay-bio {
         display: none;
       }
-    main h4 {
-        font-size: 7vh;
-        grid-area: 1 / span 3;
-        margin-top: 50px;
-        white-space: nowrap;
-    }
-    .mob-box {
-        background: rgba(0, 0, 0, 0.1);
-    }
-    main h5 {
-        grid-area: 2/1;
-    }
-    .name-box {
-        grid-area: 3 / span 3;
-    }
-    main h6 {
-        grid-area: 4/1;
-    }
-    .contact-box {
-        grid-area: 5 / span 3;
-    }
-    main p {
-        grid-area: 6/ 1;
-    }
-    .message-box {
-        grid-area: 7 / span 3;
-    }
-    .iconsgroup {
-        grid-area: 8/ span 3;
-        text-align: center;
-    }
 }
 
