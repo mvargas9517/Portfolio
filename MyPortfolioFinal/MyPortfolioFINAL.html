@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
         <link rel="stylesheet" href ="MyPortfolioFINAL.css"/>
         <link rel="stylesheet" href="/MyPortfolioFinal/fontawesome-free-5.9.0-web/css/all.css ">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Peta|Source+Serif+Pro&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         jQuery(document).ready(function($){
@@ -31,7 +33,7 @@
 <body>
     <div class="container">
         <nav class="desk">
-            <ul>
+            <ul class="animated slideInDown">
                 <li class="active"><a href="#contactpage">Contact</a></li>
                 <li><a href="#projectspage">Portfolio</a></li>
                 <li><a href="#startpage">About</a></li>
@@ -47,9 +49,9 @@
             </div>
 
                 <ul>
-                    <li class="active"><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="#contactpage">Contact</a></li>
+                    <li><a href="#projectspage">Portfolio</a></li>
+                    <li><a href="#startpage">About</a></li>
                 </ul>
     
             </nav>
@@ -85,20 +87,20 @@
                     <section id="projectspage">
                             <div class="name-text">
                                 <div class="wrapper1">
-                                    <h3>Projects</h3>
+                                    <h3 data-aos="fade-up">Projects</h3>
 
-                                    <div></div>
-                                    <a href="https://github.com/mvargas9517/FinalBioApp2" class="robotext">Robofriends Code</a>     
-                                <img src="/MyPortfolioFinal/images/robots.png" alt="robots" class="roboimg">
 
-                                <img src="images/bioapp.png" alt="bio" class="bioimg"/>
-                                <a href="https://github.com/mvargas9517/FinalBioApp2" class="biotext">BioApp Code</a>
+                                    <a href="https://github.com/mvargas9517/FinalBioApp2" class="robotext" data-aos="fade-up">Robofriends Code</a>     
+                                <img src="/MyPortfolioFinal/images/robots.png" alt="robots" class="roboimg" data-aos="fade-up" >
+
+                                <img src="images/bioapp.png" alt="bio" class="bioimg" data-aos="fade-up""/>
+                                <a href="https://github.com/mvargas9517/FinalBioApp2" class="biotext" data-aos="fade-up">BioApp Code</a>
                                 
                                 <div class="overlay-bio bioimg">
-                                    <div class="text-bio">BioApp</div>
+                                    <div class="text-bio" data-aos="fade-up">BioApp</div>
                                 </div>
                                 <div class="overlay-robo">
-                                    <div class="text-robo">RoboFriends</div>
+                                    <div class="text-robo" data-aos="fade-up">RoboFriends</div>
                                 </div>
   
 
@@ -121,8 +123,8 @@
         <div class="mob-box">
 
             <!-- <div class="wrapper2"> -->
-                <h4>Resume</h4>
-                <h5>Send an email : mvargas517@gmail.com</h5>
+                <h4 data-aos="fade-in"> <a href="Resume.html">Resume</a></h4>
+                <h5 data-aos="fade-in">Send an email : mvargas517@gmail.com</h5>
 
                     <div class="iconsgroup">
                     <a href="https://github.com/mvargas9517">
@@ -149,6 +151,9 @@
 
 </main>
     
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>

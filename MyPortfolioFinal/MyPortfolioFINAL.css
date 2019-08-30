@@ -12,6 +12,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    font-family: 'Lexend Peta', sans-serif;
 }
 nav.desk {
     grid-area: 2/2;
@@ -23,7 +24,7 @@ nav.desk ul {
     margin: 0 auto;
 }
 nav.desk ul li {
-    font-size: 4vh;
+    font-size: 3.5vh;
     width: 20%;
     float: right;
     text-align:center;
@@ -64,7 +65,6 @@ section#contactpage {
 }
 .name-text {
     color: beige;
-    font-size: 3rem;
 }
 
 .divider {
@@ -82,21 +82,29 @@ section#contactpage {
     grid-template-rows: .3fr .3fr .5fr .8fr .3fr;
 }
 main h1 {
+    font-size: 7.5vh;
     grid-area: 2/1;
     white-space: nowrap;
+    font-family: 'Lexend Peta', sans-serif;
 }
 main h2 {
+    font-size: 7.5vh;
     grid-area: 3/1;
     text-align: right;
     white-space: nowrap;
+    font-family: 'Lexend Peta', sans-serif;
 }
 .box {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 25rem;
     grid-area: 4 / span 2;
-    font-size: 4vh;
+    font-size: 5vh;
     text-align: center;
+    font-family: 'Source Serif Pro', serif;
+}
+p{
+    margin-top: 5%;
 }
 ul#menu li {
   display:inline;
@@ -114,6 +122,8 @@ ul#menu li {
 main h3{
     text-align: center;
     grid-area: 1/ span 3;
+    font-size: 6vh;
+    font-family: 'Lexend Peta', sans-serif;
 }
 .overlay-robo {
     width: 90%;
@@ -129,7 +139,7 @@ main h3{
     opacity: 0.5;
 }
 .overlay-bio {
-    width: 35%;
+    width: 50%;
     height: 100%;
     grid-area: 2/3;
     opacity: 0;
@@ -145,7 +155,7 @@ main h3{
     font-size: 3vh;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -156,7 +166,7 @@ main h3{
     font-size: 3vh;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 32%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -171,6 +181,7 @@ main h3{
     grid-area: 3/1;
     color: beige;
     text-decoration: none;
+    font-size: 5vh;
 }
 .robotext:hover {
     opacity: 0.7;
@@ -185,6 +196,7 @@ main h3{
     grid-area: 3/3;
     color: beige;
     text-decoration: none;
+    font-size: 5vh;
 }
 .biotext:hover {
     opacity: 0.7;
@@ -199,6 +211,7 @@ main h3{
 } 
 .iconsgroup {
     text-align: center;
+    column-gap: 2em;
 }
 img:hover{
     opacity: 0.7;
@@ -213,14 +226,14 @@ h4 {
     margin-bottom: 20px;
 }
 h5 {
-    font-size: 4vh;
+    font-size: 5vh;
     color: beige;
     text-align: center;
     margin-bottom: 35px;
 }
 
 .iconsgroup {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 /*Smaller screens*/
 @media screen and (max-width: 950px){
@@ -315,11 +328,11 @@ h5 {
         margin-top: 80px;
         grid-area: 1/span 2;
         text-align: center;
-        font-size: 6vh;
+        font-size: 4vh;
     }
     main h2 {
         grid-area: 3/span 2;
-        font-size: 6vh;
+        font-size: 4vh;
         justify-self:  top;
     }
     .divider {
@@ -330,8 +343,11 @@ h5 {
     width: 100%;
     height: 23rem;
     grid-area: 4 / span 2;
-    font-size: 3.3vh;
+    font-size: 3.5vh;
     color: beige;
+    }
+    section#projectspage {
+        justify-content: center;
     }
     .roboimg {
         width: 100%;
@@ -361,7 +377,7 @@ h5 {
         font-size: 3.5vh;
     }
     .wrapper1 {
-        width: 90%;
+        width: 80%;
         margin: auto;
         display: grid;
         grid-template-columns: 100px 110px 100px;
@@ -382,5 +398,11 @@ h5 {
     .overlay-bio {
         display: none;
       }
+    main a {
+        font-size: 5vh;
+    }
+    main h5 {
+        font-size: 5vh;
+    }
 }
 
