@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/MyPortfolioFinal/fontawesome-free-5.9.0-web/css/all.css ">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="projects.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Peta|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $(".hamburger-btn .fa-times").hide();
+
+            $(".hamburger-btn .fa-bars").click(function(){
+                $(this).hide();
+                $(".hamburger-btn .fa-times").show();
+                $(".mob ul").addClass("active");
+            });
+            $(".hamburger-btn .fa-times").click(function(){
+                $(this).hide();
+                $(".hamburger-btn .fa-bars").show();
+                $(".mob ul").removeClass("active");
+            });
+
+        });
+
+    </script>
+
+    <title>Projects Page</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <h1>PROJECTS</h1>
+    </header>
+
+    <main class="container">
+
+      <section class="card" data-aos="fade-up">
+      <img src="images/robots.png" alt="">
+      <div>
+        <h3>Robofriends</h3>
+        <p>Robofriends is a simple web application that is built with React.
+          It shows virtual robots that have different names and emails.
+          It is hooked up to an api that displays the images of the robots.
+        </p>
+        <a href="#" class="btn">View Code</a>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-up">
+        <img src="images/bioapp.png" alt="" style="width: 50%; justify-self: center;">
+        <div>
+          <h3>Bio App</h3>
+          <p>This is a simple bio application that is created with Xamarin and C#.
+            It displays my bio information, skills, and contact information as well.
+            Being my first app ever created I felt it necessary to show it on my portfolio.
+          </p>
+          <a href="#" class="btn">View Code</a>
+        </div>
+      </section>
+
+      <section class="card" data-aos="fade-up">
+          <img src="images/test.png" alt="" style="width: 50%; justify-self: center">
+          <div>
+            <h3>Quiz App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quaerat totam nam, dicta aperiam doloribus voluptatem quam est error architecto perspiciatis 
+              obcaecati adipisci maiores velit facilis ratione iusto quos, sit reprehenderit?
+            </p>
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </section>
+
+        <div class="container">
+            <nav class="desk">
+                <ul class="animated slideInDown">
+                    <li class="active"><a href="#contactpage">Contact</a></li>
+                    <li><a href="projectspage.html">Portfolio</a></li>
+                    <li><a href="MyPortfolioFINAL.html">About</a></li>
+                </ul>
+    
+            </nav>
+    
+            <nav class="mob">
+    
+                <div class="hamburger-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+    
+                    <ul>
+                        <li class="active"><a href="#contactpage">Contact</a></li>
+                        <li><a href="projectspage.html">Portfolio</a></li>
+                        <li><a href="MyPortfolioFINAL.html">About</a></li>
+                    </ul>
+        
+                </nav>
+
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
